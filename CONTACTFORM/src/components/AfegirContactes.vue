@@ -31,12 +31,14 @@ const afegirContacte = () => {
         v-model="nouContacte.nom" 
         placeholder="Nom del contacte" 
         required 
+        class="field"
       />
       <input 
         type="tel" 
         v-model="nouContacte.telefon" 
         placeholder="Telèfon del contacte" 
         required 
+        class="field"
       />
       <button type="submit">Afegir Contacte</button>
     </form>

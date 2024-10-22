@@ -26,10 +26,11 @@ const contactesFiltrats = computed(() => {
       type="text" 
       v-model="cercaNom" 
       placeholder="Cerca per nom" 
+      class="field"
     />
     <ul>
       <li v-for="contacte in contactesFiltrats" :key="contacte.nom">
-        <span>{{ contacte.nom }}: <span class="tel">{{ contacte.telefon }}</span></span>
+        <span class="contacte">{{ contacte.nom }}: <span class="tel">{{ contacte.telefon }}</span></span>
       </li>
     </ul>
   </div>
