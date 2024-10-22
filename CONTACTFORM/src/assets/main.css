@@ -1,0 +1,164 @@
+/* Estils globals */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Estil del contenidor principal */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Encapçalaments */
+h2 {
+  color: #4A90E2;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Estil del formulari */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+/* Estil dels camps de text */
+input[type="text"],
+input[type="tel"] {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+/* Estil del botó */
+button {
+  --color: #2e42ff;
+  padding: 0.8em 2em;
+  background-color: transparent;
+  border-radius: 0.6em;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  font-size: 17px;
+  border: 2px solid var(--color);
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #2e42ff;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+button::before,
+button::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+  background-color: var(--color);
+  transition: 0.7s ease-in-out;
+}
+
+button::before {
+  top: -1em;
+  left: -1em;
+}
+
+button::after {
+  left: calc(100% + 1em);
+  top: calc(100% + 1em);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #2e42ff, #6a75ff);
+  color: #ffffff;
+  border-color: #6a75ff;
+  box-shadow:
+    0 6px 15px rgba(46, 66, 255, 0.4),
+    0 8px 24px rgba(46, 66, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: scale(0.97);
+  filter: brightness(0.85);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #2e42ff, #5c6bff);
+}
+
+button:focus {
+  outline: none;
+  border-color: #7289da;
+  box-shadow: 0 0 0 4px rgba(46, 66, 255, 0.3);
+}
+
+/* Estil de la llista de contactes */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estil dels enllaços */
+a {
+  text-decoration: none;
+  color: #4A90E2;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="tel"] {
+    font-size: 14px;
+  }
+}
+
