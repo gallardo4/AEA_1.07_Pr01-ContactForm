@@ -16,8 +16,13 @@ main {
 }
 
 /* Encapçalaments */
+
+h1 {
+  color: #2e42ff;
+}
+
 h2 {
-  color: #4A90E2;
+  color: #2e42ff;
   margin-bottom: 1rem;
   text-align: center;
 }

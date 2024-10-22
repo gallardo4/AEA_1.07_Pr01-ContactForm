@@ -48,7 +48,7 @@ li {
 
 a {
   text-decoration: none;
-  color: blue;
+  color: #2e42ff;
 }
 
 header {
@@ -79,6 +79,6 @@ header {
 }
 
 .tel {
-  color: green;
+  color: #2e42ff;
 }
 </style>
